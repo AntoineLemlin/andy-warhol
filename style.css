@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+.viewport-container {
+  height: 100vh;
+}
+
 h1 {
   font-size: 200px;
   font-family: "Roboto", sans-serif;
@@ -346,5 +350,9 @@ h1 {
   .warhol h2 {
     font-size: 50px;
     margin-left: -20px;
+  }
+
+  .viewport-container {
+    overflow-y: scroll;
   }
 }
