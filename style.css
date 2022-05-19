@@ -8,11 +8,19 @@ body {
   overflow-x: hidden;
 }
 
+.scrollContent {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
 #viewport-container {
   position: relative;
-  height: 100vh;
+  margin: auto;
+  height: 100%;
   width: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   /* pointer-events: none; */
 }
 h1 {
