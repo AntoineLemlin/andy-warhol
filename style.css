@@ -8,11 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-.viewport-container {
-  height: 100vh;
-  overflow: scroll;
-}
-
 h1 {
   font-size: 200px;
   font-family: "Roboto", sans-serif;
