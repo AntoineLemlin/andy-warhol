@@ -185,6 +185,38 @@ document.addEventListener("DOMContentLoaded", () => {
     .setPin(".warhol")
     .addTo(controller);
 
+  //New York Animations
+
+  let timelineNewYork = new TimelineMax();
+
+  timelineNewYork
+    .from(
+      ".newyorkTitle",
+      3,
+      {
+        x: window.innerWidth,
+      },
+      0
+    )
+    .from(
+      ".newyorkTitle",
+      3,
+      {
+        scale: 0.7,
+      },
+      1
+    );
+
+  let scene5 = new ScrollMagic.Scene({
+    triggerElement: ".newyork",
+    duration: "100%",
+    triggerHook: 0,
+    offset: "0",
+  })
+    .setTween(timelineNewYork)
+    .setPin(".newyork")
+    .addTo(controller);
+
   var isMobile = (function (a) {
     return (
       /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
@@ -230,8 +262,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // add indicators to scrollcontent so they will be moved with it.
     scene.addIndicators({ parent: ".scrollContent" });
+    scene2.addIndicators({ parent: ".scrollContent" });
+    scene3.addIndicators({ parent: ".scrollContent" });
+    scene4.addIndicators({ parent: ".scrollContent" });
+    scene5.addIndicators({ parent: ".scrollContent" });
   } else {
     // add indicators (requires plugin)
     scene.addIndicators();
+    scene2.addIndicators();
+    scene3.addIndicators();
+    scene4.addIndicators();
+    scene5.addIndicators();
   }
 });

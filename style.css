@@ -12,7 +12,7 @@ body {
   position: relative;
   height: auto;
   width: 100%;
-  font-size: 0;
+  /* font-size: 0; */
 }
 
 #viewport-container {
@@ -255,6 +255,83 @@ h1 {
   position: absolute;
 }
 
+.newyork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(233, 71, 50);
+}
+
+.newyork h2 {
+  color: #f2d70b;
+  font-size: 200px;
+  font-family: "Roboto", sans-serif;
+}
+
+.newyorkArticle1 {
+  display: flex;
+  height: 100vh;
+}
+
+.newyorkArticle1 .part1 {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  font-size: 50px;
+  /* padding: 75px 25px; */
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+}
+
+.newyorkArticle1 .part1 p {
+  width: 90%;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.newyorkArticle1 .part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(217, 231, 237);
+}
+
+.newyorkArticle1 .part2 img {
+  width: 700px;
+  height: auto;
+}
+.newyorkArticle2 {
+  display: flex;
+  height: 100vh;
+}
+
+.newyorkArticle2 .part1 {
+  width: 50%;
+  overflow: hidden;
+}
+
+.andy-newyork {
+  width: 100%;
+  height: auto;
+}
+
+.newyorkArticle2 .part2 {
+  width: 50%;
+  font-size: 50px;
+  /* padding: 75px 25px; */
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+}
+
+.newyorkArticle2 .part2 p {
+  width: 90%;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
 @media only screen and (max-width: 480px) {
   h1 {
     font-size: 75px;
@@ -361,5 +438,37 @@ h1 {
   .warhol h2 {
     font-size: 50px;
     margin-left: -20px;
+  }
+
+  .newyork h2 {
+    font-size: 50px;
+  }
+
+  .newyorkArticle1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .newyorkArticle1 .part1 {
+    width: 100%;
+  }
+
+  .newyorkArticle1 .part2 {
+    width: 100%;
+  }
+
+  .newyorkArticle2 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .newyorkArticle2 .part1,
+  .newyorkArticle2 .part2 {
+    width: 100%;
+  }
+
+  .andy-newyork {
+    width: 100%;
+    height: auto;
   }
 }
