@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let controller = new ScrollMagic.Controller();
+  let controller = new ScrollMagic.Controller({ container: "body" });
 
   // FrontPage Animations
 
